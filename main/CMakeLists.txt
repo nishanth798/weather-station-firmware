@@ -1,0 +1,27 @@
+idf_component_register(
+    SRCS 
+        "main.c"
+        "config.h"
+        "rs485_handler.c"
+        "rs485_handler.h"
+        "sensor_parser.c"
+        "sensor_parser.h"
+        "mqtt_handler.c"
+        "mqtt_handler.h"
+        "data_logger.c"
+        "data_logger.h"
+        "system_monitor.c"
+        "system_monitor.h"
+    INCLUDE_DIRS 
+        "."
+    REQUIRES 
+        "esp_wifi"
+        "esp_http_server"
+        "mqtt"
+        "spiffs"
+        "nvs_flash"
+        "esp_netif"
+        "esp_event"
+        "esp_adc"
+        "freertos"
+)

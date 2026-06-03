@@ -1,0 +1,30 @@
+version: "1.0"
+description: "ESP32-S3 Weather Station Firmware with RS485 Integration"
+url: "https://github.com/your-username/weather-station-firmware"
+repository:
+  type: "git"
+  url: "https://github.com/your-username/weather-station-firmware.git"
+
+dependencies:
+  esp_wifi:
+    version: "^5.2"
+  esp_http_server:
+    version: "^5.2"
+  mqtt:
+    version: "^5.2"
+  spiffs:
+    version: "^5.2"
+  nvs_flash:
+    version: "^5.2"
+  esp_netif:
+    version: "^5.2"
+  esp_event:
+    version: "^5.2"
+  esp_adc:
+    version: "^5.2"
+  freertos:
+    version: "^5.2"
+
+metadata:
+  category: "IoT"
+  chip: ["esp32-s3"]
